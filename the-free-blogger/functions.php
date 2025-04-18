@@ -1,11 +1,11 @@
 <?php
 
-
+add_action("init", function () {
 register_block_pattern_category(
 	'the-free-blogger',
 	array( 'label' => __( 'The Free Blogger', 'the-free-blogger' ) )
 );
-
+});
 add_action('init', function() {
 	remove_theme_support('core-block-patterns');
 });
